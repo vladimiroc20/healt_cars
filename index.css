@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+}
+/* Barra de inicio-Pagina principal health cars */
+.contenedor__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+  
+.contenedor__header-logo img {
+    width: 150px; 
+}
+  
+.contenedor__header-txtb {
+    flex-grow: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.contenedor__header-txtb h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #b5e0a1;
+    margin: 0;
+}
+
+  /* Contenedor de banderas */
+.contenedor__paises-col{
+    justify-content: space-between;
+    width: 700px;
+    height: 100px;
+    margin: 100px auto;
+}
+.contenedor__paises-am{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(250, 250, 160);
+}
+.contenedor__paises-az{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(101, 101, 248);
+}
+.contenedor__paises-rj{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(243, 118, 118);
+}
+.contenedor__paises-az,a:hover{
+    background-color: rgb(127, 127, 245);
+    color: white;
+}
+.contenedor__paises-az p{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10PX 22PX;
+}
+a{
+    color: black;
+}
+.contenedor__paises-pan{
+    justify-content: space-between;
+    width: 700px;
+    height: 83px;
+    margin: 100px auto;
+    border: 1px solid black;
+}
+.contenedor__paises-una{
+    width: 100%;
+    height: 10px;
+    
+}
+.contenedor__paises-bln{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.contenedor__paises-bln,a:hover{
+    color: rgb(255, 0, 0);
+}
+.contenedor__paises-dos{
+    width: 100%;
+    height: 10px;
+    border: 1px solid black;
+}
+.contenedor__paises-una-bln{
+    border: 1px solid black;
+    display: inline-block;
+    width: 49%;
+    height: 10px;
+}
+.contenedor__paises-una-rj{
+    background-color: red;
+    display: inline-block;
+    width: 49%;
+    height: 10px;
+}
+.contenedor__paises-pnbl{
+    border: 1px solid black;
+    display: inline-block;
+    width: 49%;
+    height: 10px;
+}
+.contenedor__paises-pnaz{
+    background-color: blue;
+    display: inline-block;
+    width: 49%;
+    height: 10px;
+}
