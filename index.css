@@ -1,118 +1,185 @@
-*{
+/* Estilos generales */
+html, body {
+    height: 100%;
     margin: 0;
-}
-/* Barra de inicio-Pagina principal health cars */
-.contenedor__header {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* Estilos del encabezado */
+header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #f2f2f2;
 }
-  
-.contenedor__header-logo img {
-    width: 150px; 
+
+.logo img {
+    width: 150px;
+    max-width: 100%;
 }
-  
-.contenedor__header-txtb {
-    flex-grow: 1;
-    margin-top: 20px;
-    text-align: center;
-}
-  
-.contenedor__header-txtb h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    color: #b5e0a1;
+
+.titulo h1 {
+    font-size: 50px;
     margin: 0;
 }
 
-  /* Contenedor de banderas */
-.contenedor__paises-col{
-    justify-content: space-between;
-    width: 700px;
-    height: 100px;
-    margin: 100px auto;
+/* Estilos de las banderas */
+section {
+    margin-top: 70px;
 }
-.contenedor__paises-am{
-    width: 100%;
-    height: 60px;
-    background-color: rgb(250, 250, 160);
-}
-.contenedor__paises-az{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(101, 101, 248);
-}
-.contenedor__paises-rj{
-    width: 100%;
-    height: 30px;
-    background-color: rgb(243, 118, 118);
-}
-.contenedor__paises-az,a:hover{
-    background-color: rgb(127, 127, 245);
-    color: white;
-}
-.contenedor__paises-az p{
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10PX 22PX;
-}
-a{
+
+section a{
+    text-decoration: none;
     color: black;
 }
-.contenedor__paises-pan{
-    justify-content: space-between;
-    width: 700px;
-    height: 83px;
-    margin: 100px auto;
-    border: 1px solid black;
+section a:hover{
+    color: rgb(61, 179, 139);
 }
-.contenedor__paises-una{
-    width: 100%;
-    height: 10px;
-    
-}
-.contenedor__paises-bln{
-    background-color: white;
+
+.banderas {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
+    
+    align-items: center; /* Alinear las banderas en la parte superior */
+    height: 70%; /* Ajustar la altura según sea necesario */
+    margin-bottom: 10px; /* Espacio adicional entre las banderas y el footer */
+
+
 }
-.contenedor__paises-bln,a:hover{
-    color: rgb(255, 0, 0);
+
+.bandera {
+    margin: 0 20px 40px;
+    text-align: center;
 }
-.contenedor__paises-dos{
-    width: 100%;
-    height: 10px;
-    border: 1px solid black;
+
+.bandera img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 20%;
+    box-shadow: 18px -8px 5px 2px rgba(0, 0, 0, 0.2);
 }
-.contenedor__paises-una-bln{
-    border: 1px solid black;
-    display: inline-block;
-    width: 49%;
-    height: 10px;
+
+.bandera p {
+    font-size: 18px;
+    margin-top: 10px;
 }
-.contenedor__paises-una-rj{
-    background-color: red;
-    display: inline-block;
-    width: 49%;
-    height: 10px;
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    height: 180px; 
+    box-sizing: border-box; 
+    margin-top: auto; /* Alinear el footer en la parte inferior */
 }
-.contenedor__paises-pnbl{
-    border: 1px solid black;
-    display: inline-block;
-    width: 49%;
-    height: 10px;
+footer redes-2{
+    display: none;
 }
-.contenedor__paises-pnaz{
-    background-color: blue;
-    display: inline-block;
-    width: 49%;
-    height: 10px;
+.redes a:hover{
+    color: rgb(61, 179, 139);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.info h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.redes a {
+    margin: 0 5px;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+}
+.redes-2{
+    display: none;
+}
+.redes-2 a {
+    margin: 0 5px;
+}
+
+.redes-2 img {
+    width: 20px;
+    height: 20px;
+}
+/* Animaciones */
+@keyframes scale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.bandera:hover img {
+    animation: scale 1s infinite;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column; /* Cambio a dirección de columna */
+    }
+    .logo {
+        text-align: center;
+    }
+
+    .titulo {
+        margin-top: 20px; /* Espacio adicional entre el logo y el título */
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .banderas {
+        margin-bottom: 100px;
+    }
+
+    .bandera img {
+        width: 150px;
+    }
+
+    footer{
+        height: 220px;
+    }
+    footer .redes{
+        display: none;
+    }
+    footer .redes-2{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 280px){
+    header{
+        flex-direction: column; /* Cambio a dirección de columna */
+    }
+    .logo {
+        text-align: center;
+    }
+
+    .titulo {
+        margin-top: 20px; /* Espacio adicional entre el logo y el título */
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .banderas {
+        margin-bottom: 80px;
+    }
+
+    .bandera img {
+        width: 150px;
+    }
 }
