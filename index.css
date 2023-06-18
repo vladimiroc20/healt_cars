@@ -6,7 +6,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
   }
 body{
-    background: url('T3P_9759.jpg') no-repeat center center fixed;
+    background: url('T3P_9675.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -18,15 +18,16 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #f2f2f2;
+    opacity: 0.8;
 }
 
 .logo img {
-    width: 150px;
+    width: 100px;
     max-width: 100%;
 }
 
 .titulo h1 {
-    font-size: 50px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -38,6 +39,7 @@ section {
 section a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 section p{
     text-shadow: 1px 1px 5px white;
@@ -79,9 +81,10 @@ section a:hover{
 footer {
     background-color: #333;
     color: #fff;
+    opacity: 0.9;
     padding: 5px;
     text-align: center;
-    height: 180px; 
+    height: 230px; 
     box-sizing: border-box; 
     margin-top: auto; /* Alinear el footer en la parte inferior */
 }
@@ -185,7 +188,7 @@ footer a{
     }
 
     .banderas {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 
     .bandera img {
