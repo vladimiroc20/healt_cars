@@ -26,7 +26,7 @@ header {
     max-width: 100%;
 }
 
-.titulo h1 {
+.titulo h2 {
     font-size: 30px;
     margin: 0;
 }
@@ -38,11 +38,11 @@ section {
 
 section a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 section p{
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 section a:hover{
     color: rgb(61, 179, 139);
@@ -56,8 +56,6 @@ section a:hover{
     align-items: center; /* Alinear las banderas en la parte superior */
     height: 70%; /* Ajustar la altura según sea necesario */
     margin-bottom: 10px; /* Espacio adicional entre las banderas y el footer */
-
-
 }
 
 .bandera {
@@ -67,6 +65,7 @@ section a:hover{
 
 .bandera img {
     width: 200px;
+    height: 100px;
     max-width: 100%;
     border-radius: 20%;
     box-shadow: 18px -8px 5px 2px rgba(0, 0, 0, 0.2);
@@ -99,7 +98,7 @@ footer a{
     color: white;
 }
 
-.info h3 {
+.info h1 {
     margin-bottom: 10px;
     font-size: 30px;
     color: rgb(61, 179, 139);
